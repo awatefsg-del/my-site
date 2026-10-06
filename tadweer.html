@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>تمكّني | منصة التطوير المهني للمعلمة</title>
+  <meta name="description" content="منصة التطوير المهني للمعلمة: دورات حديثة، مسارات تعلم، واختبار تفاعلي للمهارات مع دعم الوضع الليلي وتكبير الخط." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='48' fill='%23145a50'/><text x='50' y='68' font-size='52' text-anchor='middle' fill='%23d4af37' font-family='serif'>ت</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <!-- خط تاجوال (Tajawal) بأوزان 400 / 500 / 700 / 800 = خط ثمانية للعناوين -->
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/tadweer.css" />
+</head>
+<body>
+
+  <!-- ===== شريط إمكانية الوصول ===== -->
+  <div class="a11y-bar" role="toolbar" aria-label="خيارات إمكانية الوصول">
+    <div class="container a11y-inner">
+      <span class="a11y-label">♿ إمكانية الوصول:</span>
+      <div class="a11y-controls">
+        <button id="fontDecrease" class="a11y-btn" aria-label="تصغير الخط">أ−</button>
+        <span id="fontSizeLabel" class="a11y-size" aria-live="polite">100%</span>
+        <button id="fontIncrease" class="a11y-btn" aria-label="تكبير الخط">أ+</button>
+        <button id="fontReset" class="a11y-btn a11y-reset" aria-label="إعادة ضبط الخط">إعادة</button>
+        <span class="a11y-sep"></span>
+        <button id="themeToggle" class="a11y-btn theme-btn" aria-label="تبديل المظهر ليلي / نهاري">
+          <span id="themeIcon">🌙</span> <span id="themeText">ليلي</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== التنقل ===== -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="tadweer.html" class="brand">
+        <span class="brand-mark">ت</span>
+        <span class="brand-text">تمكّني <small>للمعلمة</small></span>
+      </a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#home" class="nav-link active">الرئيسية</a>
+        <a href="#courses" class="nav-link">الدورات الحديثة</a>
+        <a href="#path" class="nav-link">المسار المهني</a>
+        <a href="#quiz" class="nav-link">اختبار المهارات</a>
+        <a href="index.html" class="nav-link nav-back">↩ موقع المقررات</a>
+      </nav>
+      <button class="menu-toggle" id="menuToggle" aria-label="فتح القائمة"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <!-- ===== البطل ===== -->
+  <section class="hero" id="home">
+    <div class="hero-blob blob-1"></div>
+    <div class="hero-blob blob-2"></div>
+    <div class="container hero-inner">
+      <p class="hero-badge reveal">✨ نسخة 2026 — دورات مواكبة للذكاء الاصطناعي والتعليم الحديث</p>
+      <h1 class="hero-title reveal">طوّري مهاراتك التدريسية<br /><span class="gold">بثقة وإبداع</span></h1>
+      <p class="hero-desc reveal">منصة عربية مصممة للمعلمة: 8 دورات حديثة قصيرة وتطبيقية، مسار مهني واضح، واختبار تفاعلي يكشف مستواك ويقترح دورتك القادمة.</p>
+      <div class="hero-actions reveal">
+        <a href="#courses" class="btn btn-primary">استكشفي الدورات</a>
+        <a href="#quiz" class="btn btn-outline">🧠 اختبري مهاراتك</a>
+      </div>
+      <div class="hero-stats reveal">
+        <div class="stat"><span class="stat-num" data-count="8">8</span><span class="stat-label">دورات حديثة</span></div>
+        <div class="stat"><span class="stat-num"><span data-count="42">42</span>+</span><span class="stat-label">ساعة تدريبية</span></div>
+        <div class="stat"><span class="stat-num"><span data-count="1200">1200</span>+</span><span class="stat-label">معلمة مستفيدة</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== المميزات ===== -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="section-kicker">لماذا تمكّني؟</span>
+        <h2 class="section-title">مصممة لتناسب يومك كمعلمة</h2>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card reveal"><span class="f-icon">🎯</span><h3>تعلم تطبيقي قصير</h3><p>دروس 10–15 دقيقة + أنشطة صفية جاهزة تطبقينها من الغد.</p></div>
+        <div class="feature-card reveal"><span class="f-icon">🌙</span><h3>وضع ليلي ونهاري</h3><p>بدّلي الثيم بضغطة زر، ويُحفظ اختيارك تلقائياً.</p></div>
+        <div class="feature-card reveal"><span class="f-icon">أ+</span><h3>تكبير وتصغير الخط</h3><p>تحكمي بحجم الخط (80% – 140%) لراحة القراءة.</p></div>
+        <div class="feature-card reveal"><span class="f-icon">📜</span><h3>شهادات إنجاز</h3><p>شهادة PDF لكل دورة + شارة تُضاف لملفك المهني.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== الدورات ===== -->
+  <section class="section section-alt" id="courses">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="section-kicker">دورات 2025 – 2026</span>
+        <h2 class="section-title">دورات حديثة ومطلوبة</h2>
+        <p class="section-sub">رشّحي حسب المجال، ثم سجّلي بضغطة زر</p>
+      </div>
+
+      <div class="filter-bar reveal" role="tablist" aria-label="تصفية الدورات">
+        <button class="filter-btn active" data-filter="all">الكل</button>
+        <button class="filter-btn" data-filter="tech">🤖 تقنية وذكاء اصطناعي</button>
+        <button class="filter-btn" data-filter="pedagogy">👩‍🏫 بيداغوجيا</button>
+        <button class="filter-btn" data-filter="assess">📊 تقويم</button>
+        <button class="filter-btn" data-filter="lead">🌟 قيادة ومهنية</button>
+      </div>
+
+      <div class="courses-grid" id="coursesGrid">
+
+        <article class="course-card reveal" data-cat="tech">
+          <div class="course-top"><span class="course-icon">🤖</span><span class="course-badge new">جديد</span></div>
+          <h3>الذكاء الاصطناعي التوليدي للمعلمة</h3>
+          <p class="course-brief">صياغة الدروس وبنوك الأسئلة والأنشطة بـ ChatGPT وأدوات عربية، مع أخلاقيات الاستخدام.</p>
+          <div class="course-meta"><span>⏱ 6 ساعات</span><span>📅 3 أسابيع</span><span>💻 عن بُعد</span></div>
+          <div class="course-foot"><span class="level">مبتدئ – متوسط</span><button class="btn btn-teal btn-sm enroll-btn" data-course="الذكاء الاصطناعي التوليدي للمعلمة">سجّلي الآن</button></div>
+        </article>
+
+        <article class="course-card reveal" data-cat="pedagogy">
+          <div class="course-top"><span class="course-icon">💡</span><span class="course-badge hot">الأكثر طلباً</span></div>
+          <h3>التعلم النشط ومهارات التفكير العليا</h3>
+          <p class="course-brief">استراتيجيات: الصف المقلوب، التعلم باللعب، الخرائط الذهنية، وأسئلة بلوم المطوّرة.</p>
+          <div class="course-meta"><span>⏱ 8 ساعات</span><span>📅 4 أسابيع</span><span>🔀 مدمج</span></div>
+          <div class="course-foot"><span class="level">جميع المستويات</span><button class="btn btn-teal btn-sm enroll-btn" data-course="التعلم النشط ومهارات التفكير العليا">سجّلي الآن</button></div>
+        </article>
+
+        <article class="course-card reveal" data-cat="pedagogy">
+          <div class="course-top"><span class="course-icon">🧩</span><span class="course-badge">عملي</span></div>
+          <h3>إدارة الصف الرقمي والتحفيز</h3>
+          <p class="course-brief">روتينات صفية ذكية، تعزيز إيجابي، ومعالجة السلوكيات الصفية بأدوات ClassDojo و most.</p>
+          <div class="course-meta"><span>⏱ 5 ساعات</span><span>📅 أسبوعان</span><span>💻 عن بُعد</span></div>
+          <div class="course-foot"><span class="level">مبتدئ</span><button class="btn btn-teal btn-sm enroll-btn" data-course="إدارة الصف الرقمي والتحفيز">سجّلي الآن</button></div>
+        </article>
+
+        <article class="course-card reveal" data-cat="assess">
+          <div class="course-top"><span class="course-icon">📊</span><span class="course-badge new">جديد</span></div>
+          <h3>التقويم البديل والاختبارات الرقمية</h3>
+          <p class="course-brief">ملفات الإنجاز، الروبركات، الاختبارات التكيفية، وتحليل النتائج بـ Excel و Forms.</p>
+          <div class="course-meta"><span>⏱ 6 ساعات</span><span>📅 3 أسابيع</span><span>💻 عن بُعد</span></div>
+          <div class="course-foot"><span class="level">متوسط</span><button class="btn btn-teal btn-sm enroll-btn" data-course="التقويم البديل والاختبارات الرقمية">سجّلي الآن</button></div>
+        </article>
+
+        <article class="course-card reveal" data-cat="tech">
+          <div class="course-top"><span class="course-icon">🚀</span><span class="course-badge">STEM</span></div>
+          <h3>دمج STEM والتعلم بالمشاريع</h3>
+          <p class="course-brief">صممي مشروعاً صفياً يدمج العلوم والتقنية والرياضيات مع أدوات محاكاة مجانية.</p>
+          <div class="course-meta"><span>⏱ 8 ساعات</span><span>📅 4 أسابيع</span><span>🏫 حضوري</span></div>
+          <div class="course-foot"><span class="level">متوسط – متقدم</span><button class="btn btn-teal btn-sm enroll-btn" data-course="دمج STEM والتعلم بالمشاريع">سجّلي الآن</button></div>
+        </article>
+
+        <article class="course-card reveal" data-cat="pedagogy">
+          <div class="course-top"><span class="course-icon">💛</span><span class="course-badge">دامج</span></div>
+          <h3>التعليم الدامج والفروق الفردية</h3>
+          <p class="course-brief">خطط فردية، تفريق التعليم، واستراتيجيات دعم صعوبات التعلم والموهوبات.</p>
+          <div class="course-meta"><span>⏱ 5 ساعات</span><span>📅 أسبوعان</span><span>🔀 مدمج</span></div>
+          <div class="course-foot"><span class="level">جميع المستويات</span><button class="btn btn-teal btn-sm enroll-btn" data-course="التعليم الدامج والفروق الفردية">سجّلي الآن</button></div>
+        </article>
+
+        <article class="course-card reveal" data-cat="lead">
+          <div class="course-top"><span class="course-icon">🌟</span><span class="course-badge hot">قيادية</span></div>
+          <h3>القيادة الصفية والهوية المهنية</h3>
+          <p class="course-brief">بناء حضورك المهني، التواصل مع أولياء الأمور، وملف الإنجاز للترقيات والرخصة.</p>
+          <div class="course-meta"><span>⏱ 4 ساعات</span><span>📅 أسبوع</span><span>💻 عن بُعد</span></div>
+          <div class="course-foot"><span class="level">متقدم</span><button class="btn btn-teal btn-sm enroll-btn" data-course="القيادة الصفية والهوية المهنية">سجّلي الآن</button></div>
+        </article>
+
+        <article class="course-card reveal" data-cat="tech">
+          <div class="course-top"><span class="course-icon">🛡️</span><span class="course-badge new">مهم</span></div>
+          <h3>الأمن الرقمي والمواطنة الرقمية</h3>
+          <p class="course-brief">حماية بيانات الطالبات، الاستخدام الآمن للمنصات، وغرس المواطنة الرقمية في الحصص.</p>
+          <div class="course-meta"><span>⏱ 4 ساعات</span><span>📅 أسبوع</span><span>💻 عن بُعد</span></div>
+          <div class="course-foot"><span class="level">مبتدئ</span><button class="btn btn-teal btn-sm enroll-btn" data-course="الأمن الرقمي والمواطنة الرقمية">سجّلي الآن</button></div>
+        </article>
+
+      </div>
+      <p class="enroll-note" id="enrollNote" aria-live="polite"></p>
+    </div>
+  </section>
+
+  <!-- ===== المسار ===== -->
+  <section class="section" id="path">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="section-kicker">رحلتك خطوة بخطوة</span>
+        <h2 class="section-title">المسار المهني المقترح</h2>
+      </div>
+      <div class="timeline">
+        <div class="tl-item reveal"><span class="tl-dot">1</span><div class="tl-card"><h3>اختبري مستواك (10 دقائق)</h3><p>أجيبي عن 10 مواقف صفية واقعية لنحدد نقاط قوتك.</p></div></div>
+        <div class="tl-item reveal"><span class="tl-dot">2</span><div class="tl-card"><h3>ابدئي بدورة تأسيسية</h3><p>نرشح لك دورة واحدة مناسبة لنتيجتك بدل التشتت.</p></div></div>
+        <div class="tl-item reveal"><span class="tl-dot">3</span><div class="tl-card"><h3>طبّقي في صفك</h3><p>كل دورة تنتهي بمشروع تطبيقي موثّق بالصور أو فيديو قصير.</p></div></div>
+        <div class="tl-item reveal"><span class="tl-dot">4</span><div class="tl-card"><h3>احصلي على الشهادة</h3><p>شهادة إتمام + شارة رقمية لملف الرخصة المهنية.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== اختبار المهارات ===== -->
+  <section class="section section-alt" id="quiz">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="section-kicker">تفاعلي • 10 أسئلة • فوري النتيجة</span>
+        <h2 class="section-title">🧠 اختبار المهارات التدريسية</h2>
+        <p class="section-sub">مواقف صفية حقيقية في: التقنية، التعلم النشط، التقويم، وإدارة الصف</p>
+      </div>
+
+      <div class="quiz-shell reveal">
+        <!-- شاشة البداية -->
+        <div class="quiz-screen active" id="quizStart">
+          <div class="quiz-start-icon">🎓</div>
+          <h3>جاهزة تكتشفين مستواك؟</h3>
+          <p>10 أسئلة اختيار من متعدد، لكل سؤال شرح تربوي. نتيجتك تبقى محفوظة في جهازك.</p>
+          <div class="quiz-meta-row">
+            <span>⏱ ~10 دقائق</span><span>🏆 أفضل نتيجة: <b id="bestScore">—</b></span>
+          </div>
+          <button class="btn btn-primary btn-lg" id="startQuizBtn">ابدئي الاختبار الآن</button>
+        </div>
+
+        <!-- شاشة الأسئلة -->
+        <div class="quiz-screen" id="quizPlay">
+          <div class="quiz-progress-top">
+            <span id="quizCounter">السؤال 1 من 10</span>
+            <span id="quizSkillTag" class="skill-tag">تقنية</span>
+          </div>
+          <div class="quiz-progress"><div class="quiz-progress-fill" id="quizProgressFill"></div></div>
+          <h3 class="quiz-q" id="quizQuestion">نص السؤال</h3>
+          <div class="quiz-options" id="quizOptions"></div>
+          <p class="quiz-feedback" id="quizFeedback"></p>
+          <div class="quiz-nav">
+            <button class="btn btn-teal" id="nextBtn" disabled>التالي ←</button>
+          </div>
+        </div>
+
+        <!-- شاشة النتيجة -->
+        <div class="quiz-screen" id="quizResult">
+          <div class="result-circle"><span id="resultPct">0%</span></div>
+          <h3 id="resultLevel">مستواك: متطورة</h3>
+          <p id="resultDesc"></p>
+          <div class="result-rec" id="resultRec"></div>
+          <div class="quiz-nav center">
+            <button class="btn btn-primary" id="retryBtn">🔄 إعادة الاختبار</button>
+            <a href="#courses" class="btn btn-teal">تصفحي دورتك المرشحة</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand"><span class="brand-mark">ت</span>
+        <div><p class="footer-name">تمكّني — التطوير المهني للمعلمة</p>
+        <p class="footer-role">خط Tajawal بوزن 800 (ثمانية) للعناوين • دعم ليلي / نهاري • تكبير الخط</p></div>
+      </div>
+      <nav class="footer-links">
+        <a href="#home">الرئيسية</a><a href="#courses">الدورات</a><a href="#quiz">الاختبار</a><a href="index.html">موقع المقررات</a>
+      </nav>
+      <p class="footer-copy">جميع الحقوق محفوظة © <span id="year"></span> — تمكّني</p>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="العودة للأعلى">↑</button>
+
+  <script src="js/tadweer.js"></script>
+</body>
+</html>
